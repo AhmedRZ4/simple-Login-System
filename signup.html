@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/login.png">
+    <title>Login</title>
+    <base href="./index.html">
+    <meta name="description" content="simple login system">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="vh-100 main-bg d-flex">
+        <div class="w-50 p-5 m-auto mt-5 text-center shadow-x">
+            <div class="row g-4 text-white needs-validation">
+                <h1 class="main-color">Smart Login System</h1>
+                <div class="p-0">
+                    <input id="sUName" type="text" class="form-control bg-transparent text-white position-relative"
+                        placeholder="Enter Your Name" required>
+                    <div class="text-start invalid-feedback m-0">
+                        username must be at least 3 chars and starting with a letter,alphanumeric characters, dots, or
+                        underscores.
+                    </div>
+                </div>
+                <div class="p-0">
+                    <input id="sUEmail" type="email" class="form-control bg-transparent text-white "
+                        placeholder="Enter Your Email" required>
+                    <div class="text-start invalid-feedback  m-0">
+                        Email must be a valid one
+                    </div>
+                </div>
+                <div class="p-0">
+                    <input id="sUPass" type="password" class="form-control bg-transparent text-white "
+                        placeholder="Enter Your Password" required>
+                    <div class="text-start invalid-feedback m-0">
+                        password must be at least 8 chars, with digits, letters (both cases), and special characters.
+                    </div>
+                </div>
+                <button class="btn btn-outline-info" type="submit" id="signUp" onclick="addUser()">Sign Up</button>
+                <p class="text-white">Don’t have an account? <a class="text-decoration-none text-white hover"
+                        href="./index.html">Sign In</a></p>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="sMessage"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

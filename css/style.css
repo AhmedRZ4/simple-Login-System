@@ -1,0 +1,21 @@
+body{
+    font-family: "Titillium Web", sans-serif;
+}
+.main-bg{
+    background-color: #24353F !important;
+}
+.main-color{
+    color: #17a2b8 !important;
+}
+.shadow-x{
+    box-shadow: 0px 1px 20px 0px black;
+}
+::placeholder{
+    color: rgb(190, 189, 189) !important;
+}
+.hover:hover{
+    text-decoration: underline !important;
+}
+.border-box{
+    box-sizing: border-box;
+}
