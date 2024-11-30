@@ -74,7 +74,7 @@ function addUser() {
             };
             users.push(user);
             addToLocal(users, "users");
-            window.open("../index.html", '_self');
+            window.open("index.html", '_self');
         } else {
             const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
             const mess = document.getElementById("sMessage");
@@ -90,7 +90,7 @@ function loginCheck() {
     if (user != null) {
         if (user.password == lPass.value.trim()) {
             addToLocal(user.userName, "userName");
-            newWin = window.open("../home.html", '_self');
+            newWin = window.open("home.html", '_self');
         } else {
             const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
             const mess = document.getElementById("sMessage");
