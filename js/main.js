@@ -15,7 +15,7 @@ if (getFromLocal("userName") != null) {
     const userNameValue = getFromLocal("userName");
     const urlName = window.location.href;
     if (urlName.search("home") == (-1)) {
-        newWin = window.open("../home.html", '_self');
+        newWin = window.open("home.html", '_self');
     }
     userNameHomeDisplay.innerHTML = userNameValue;
 }
