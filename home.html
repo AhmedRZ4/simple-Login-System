@@ -8,6 +8,11 @@
     <title>Login</title>
     <base href="./index.html">
     <meta name="description" content="simple login system">
+    <script>
+        if(getFromLocal("users") == null){
+            window.open("home.html", '_self');
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
