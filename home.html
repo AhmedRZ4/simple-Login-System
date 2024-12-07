@@ -8,11 +8,6 @@
     <title>Login</title>
     <base href="./index.html">
     <meta name="description" content="simple login system">
-    <script>
-        if(JSON.parse(localStorage.getItem("userName")) == null){
-            window.open("home.html", '_self');
-        }
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +17,11 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        if(localStorage.getItem("userName") == null){
+            window.open("index.html","_self");
+        }
+    </script>
 </head>
 
 <body>
